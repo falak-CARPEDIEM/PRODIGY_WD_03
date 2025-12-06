@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prodigy Task 3 | Tic Tac Toe Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="logo-badge">T3</div>
+      <div class="header-text">
+        <h1>Tic Tac Toe – Task 3</h1>
+        <p>Prodigy InfoTech • Web Development Internship</p>
+      </div>
+    </header>
+
+    <main class="game-card">
+      <div class="intro">
+        <h2>Playful, minimal &amp; different.</h2>
+        <p>
+          A clean, pastel‑themed Tic Tac Toe game built from scratch using HTML, CSS and JavaScript –
+          with a live scoreboard to track both players.
+        </p>
+      </div>
+
+      <section class="scoreboard">
+        <div class="score player-x">
+          <span class="label">Player X</span>
+          <span id="score-x" class="value">0</span>
+        </div>
+        <div class="score draws">
+          <span class="label">Draws</span>
+          <span id="score-draws" class="value">0</span>
+        </div>
+        <div class="score player-o">
+          <span class="label">Player O</span>
+          <span id="score-o" class="value">0</span>
+        </div>
+      </section>
+
+      <div id="status" class="status">
+        Player X, it’s your turn.
+      </div>
+
+      <section class="board" id="board">
+        <button class="cell" data-index="0"></button>
+        <button class="cell" data-index="1"></button>
+        <button class="cell" data-index="2"></button>
+        <button class="cell" data-index="3"></button>
+        <button class="cell" data-index="4"></button>
+        <button class="cell" data-index="5"></button>
+        <button class="cell" data-index="6"></button>
+        <button class="cell" data-index="7"></button>
+        <button class="cell" data-index="8"></button>
+         <!-- Winning line overlay -->
+  <div class="win-line" id="win-line"></div>
+      </section>
+
+      <section class="controls">
+        <button id="new-round" class="btn primary">New Round</button>
+        <button id="reset-scores" class="btn ghost">Reset Scores</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      © 2025 Falaknaaz Mujawar • Prodigy Web Dev Intern • Task 3 – Tic Tac Toe
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
